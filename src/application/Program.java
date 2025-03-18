@@ -40,6 +40,15 @@ public class Program {
 		
 		System.out.println(newSeller.getId());
 		
+		System.out.println("\n=== TEST 5: update =====");
+		seller = sellerDao.findById(1);
+		
+		seller.setName("New Test");
+		
+		sellerDao.update(seller);
+		
+		System.out.println("Update done");
+		
 	}
 
 }
