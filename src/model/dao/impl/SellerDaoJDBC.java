@@ -146,8 +146,7 @@ public class SellerDaoJDBC implements SellerDao {
 
 			}
 
-			else
-				return null;
+			return null;
 
 		} catch (SQLException e) {
 			throw new DbException(e.getMessage());
